@@ -9,11 +9,12 @@ from reportlab.lib import colors
 from reportlab.pdfgen import canvas
 from reportlab.lib.utils import simpleSplit
 
-# ---- editable team details (fill these in) ----
-TEAM_NAME   = "[ Your Team Name ]"
-TEAM_LEADER = "[ Your Name ]"
-GITHUB      = "https://github.com/Abhinav09-bits/redrob-trustscore"
-SANDBOX     = "[ sandbox link — HuggingFace/Streamlit ]"
+# ---- editable team details ----
+TEAM_NAME    = "Arcane009"
+TEAM_LEADER  = "Abhinav Khatta"
+TEAM_MEMBERS = "Divyanshu Kapariya, Abhinav Khatta"
+GITHUB       = "https://github.com/Abhinav09-bits/redrob-trustscore"
+SANDBOX      = "[ sandbox link — HuggingFace/Streamlit ]"
 
 # ---- theme ----
 PURPLE = colors.HexColor("#5B3FD6")
@@ -101,7 +102,7 @@ c.drawString(M, H-82*mm, "Track 1  ·  Data & AI Challenge: Intelligent Candidat
 
 c.setFillColor(colors.white); c.setFont("Helvetica-Bold", 12)
 y = H-115*mm
-for k, v in [("Team Name", TEAM_NAME), ("Team Leader", TEAM_LEADER)]:
+for k, v in [("Team Name", TEAM_NAME), ("Team Leader", TEAM_LEADER), ("Team Members", TEAM_MEMBERS)]:
     c.setFillColor(colors.HexColor("#9F8CEA")); c.setFont("Helvetica", 11); c.drawString(M, y, k+" :")
     c.setFillColor(colors.white); c.setFont("Helvetica-Bold", 13); c.drawString(M+45*mm, y, v)
     y -= 11*mm

@@ -1,18 +1,20 @@
 # Redrob Hackathon — Submission Metadata
 # Fill in the bracketed fields before submitting via the portal.
 
-team_name: "[ Your Team Name ]"
+team_name: "Arcane009"
 
 primary_contact:
-  name: "[ Full Name ]"
-  email: "[ primary@example.com ]"
+  name: "Abhinav Khatta"
+  email: "abhinavabhi91203@gmail.com"
   phone: "[ +91-XXXXXXXXXX ]"
 
 team_members:
-  - name: "[ Member 1 ]"
-    email: "[ member1@example.com ]"
+  - name: "Abhinav Khatta"
+    email: "abhinavabhi91203@gmail.com"
     role: "Team Lead / ML Engineer"
-  # add more members as needed
+  - name: "Divyanshu Kapariya"
+    email: "[ divyanshu email ]"
+    role: "Data / Engineering"
 
 # ---------------------------------------------------------------------------
 # Code and reproducibility
