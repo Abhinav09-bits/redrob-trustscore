@@ -17,7 +17,7 @@ team_members:
 # ---------------------------------------------------------------------------
 # Code and reproducibility
 # ---------------------------------------------------------------------------
-github_repo: "[ https://github.com/YOUR_USERNAME/redrob-trustscore ]"
+github_repo: "https://github.com/Abhinav09-bits/redrob-trustscore"
 sandbox_link: "[ https://huggingface.co/spaces/YOUR_USERNAME/redrob-trustscore ]"
 reproduce_command: "python rank.py --candidates ./data/candidates.jsonl --out ./submission"
 
