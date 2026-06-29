@@ -1,0 +1,69 @@
+# Redrob Hackathon — Submission Metadata
+# Fill in the bracketed fields before submitting via the portal.
+
+team_name: "[ Your Team Name ]"
+
+primary_contact:
+  name: "[ Full Name ]"
+  email: "[ primary@example.com ]"
+  phone: "[ +91-XXXXXXXXXX ]"
+
+team_members:
+  - name: "[ Member 1 ]"
+    email: "[ member1@example.com ]"
+    role: "Team Lead / ML Engineer"
+  # add more members as needed
+
+# ---------------------------------------------------------------------------
+# Code and reproducibility
+# ---------------------------------------------------------------------------
+github_repo: "[ https://github.com/YOUR_USERNAME/redrob-trustscore ]"
+sandbox_link: "[ https://huggingface.co/spaces/YOUR_USERNAME/redrob-trustscore ]"
+reproduce_command: "python rank.py --candidates ./data/candidates.jsonl --out ./submission"
+
+# ---------------------------------------------------------------------------
+# Compute environment
+# ---------------------------------------------------------------------------
+compute:
+  platform: "Local Windows machine"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.13"
+  os: "Windows 11"
+  uses_gpu_for_inference: false        # we use no GPU
+  has_network_during_ranking: false    # ranking makes zero network calls
+  pre_computation_required: false      # no offline embeddings/training needed
+  pre_computation_time_minutes: 0
+
+# ---------------------------------------------------------------------------
+# AI tools declaration (transparency only, not penalized)
+# ---------------------------------------------------------------------------
+ai_tools_used:
+  - "Claude"
+ai_usage_summary: |
+  Used Claude for architecture discussion, code review, and drafting the ranker
+  and documentation. All scoring logic is rule-based and human-reviewed. No
+  candidate data was sent to any LLM, and no LLM is called during ranking.
+
+# ---------------------------------------------------------------------------
+# Approach summary
+# ---------------------------------------------------------------------------
+methodology_summary: |
+  Redrob TrustScore: a transparent, rule-based ranker. Seven components —
+  role fit, real-experience evidence (read from career-history text, not skill
+  tags), experience-band fit, location, JD-named disqualifier penalties, a
+  behavioral availability multiplier, and a honeypot consistency kill-switch —
+  combine into one auditable score. The design deliberately defeats keyword
+  stuffers (judges what candidates did, not what they listed) and avoids the
+  ~80 honeypots via internal-consistency checks. Runs in ~17s for 100K
+  candidates on CPU with no network.
+
+# ---------------------------------------------------------------------------
+# Declarations
+# ---------------------------------------------------------------------------
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true     # qa.py confirms zero honeypots in top 100
+  reproduction_tested: true
