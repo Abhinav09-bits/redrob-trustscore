@@ -54,3 +54,20 @@ Produces `submission.csv` and `submission.xlsx` (top 100, with reasoning).
 ```bash
 python qa.py   # checks format + confirms no traps slipped into the top 100
 ```
+
+## Sandbox / live demo
+`app.py` is a Streamlit demo that runs the ranker on a small sample
+(`data/sample_candidates.jsonl`, 150 candidates) or an uploaded file, and shows
+the ranked output + reasoning live.
+
+Run locally:
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Deploy (free):
+- **Streamlit Community Cloud** — go to share.streamlit.io, connect this GitHub
+  repo, set the main file to `app.py`. Done.
+- **HuggingFace Spaces** — create a Streamlit Space, push these files; set the
+  app file to `app.py`.

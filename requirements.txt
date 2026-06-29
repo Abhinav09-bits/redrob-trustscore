@@ -1,3 +1,8 @@
-# Redrob TrustScore — minimal dependencies (CPU-only, no network at runtime)
-# CSV output uses the Python standard library; openpyxl is only for the XLSX file.
+# Redrob TrustScore dependencies (CPU-only, no network at runtime)
+#
+# Ranking core (rank.py) needs only openpyxl; CSV uses the stdlib.
 openpyxl>=3.1.0
+#
+# Sandbox demo (app.py) — only needed to run the hosted Streamlit demo,
+# NOT needed to reproduce the submission from rank.py.
+streamlit>=1.30.0
