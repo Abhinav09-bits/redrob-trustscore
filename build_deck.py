@@ -14,7 +14,7 @@ TEAM_NAME    = "Arcane009"
 TEAM_LEADER  = "Abhinav Khatta"
 TEAM_MEMBERS = "Divyanshu Kapariya, Abhinav Khatta"
 GITHUB       = "https://github.com/Abhinav09-bits/redrob-trustscore"
-SANDBOX      = "[ sandbox link — HuggingFace/Streamlit ]"
+SANDBOX      = "https://redrob-trustscore-gba7ntzmq5cwxtkp6ghgkn.streamlit.app/"
 
 # ---- theme ----
 PURPLE = colors.HexColor("#5B3FD6")
